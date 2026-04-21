@@ -1,0 +1,39 @@
+# إنشاء ملف .gitignore
+cat > .gitignore << EOF
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Local config
+config.local.py
+secret.py
+EOF
+
+# أضف الملف وارفع التحديث
+git add .gitignore
+git commit -m "Add .gitignore"
+git push
